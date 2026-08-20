@@ -1,9 +1,323 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Under Development</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Bite | Smart Food Safety</title>
+  <meta name="description" content="Safe Bite is a startup prototype for a smart food-adulteration detection pen.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>This site is under development. Please visit after sometime.</p>
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Safe Bite home">
+        <span class="brand-mark">SB</span>
+        <span>Safe Bite</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#product">Product</a>
+        <a href="#how">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#customers">Customers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#product">Get Safe Bite</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Smart Food Safety</span>
+        <h1>Know What&rsquo;s In Your Food.</h1>
+        <p>A quick, affordable and portable way to check possible food adulteration &mdash; anytime, anywhere.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#product">Explore Safe Bite</a>
+          <a class="btn secondary" href="#how">See How It Works</a>
+        </div>
+        <div class="hero-proof">
+          <span>SafeBite 360</span>
+          <span>@safebite._.360</span>
+        </div>
+      </div>
+
+      <div class="product-stage reveal">
+        <div class="floating-card quick">Quick Testing</div>
+        <div class="floating-card portable">Portable</div>
+        <div class="floating-card led">LED Safety Indicator</div>
+        <div class="floating-card affordable">Affordable</div>
+        <div class="status-pair">
+          <span><i class="dot safe"></i>Safe</span>
+          <span><i class="dot unsafe"></i>Unsafe</span>
+        </div>
+        <div class="pen-mockup large" aria-label="Safe Bite smart detection pen">
+          <div class="pen-tip"></div>
+          <div class="pen-body">
+            <span class="pen-brand">Safe Bite</span>
+            <span class="led-light"></span>
+            <span class="pen-line"></span>
+          </div>
+          <div class="pen-cap"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem" id="problem">
+      <div class="section-heading reveal">
+        <span class="eyebrow">The Problem</span>
+        <h2>Food Safety Shouldn&rsquo;t Require a Laboratory.</h2>
+      </div>
+      <div class="card-grid four">
+        <article class="info-card reveal"><span class="icon">?</span><h3>Hidden Adulteration</h3><p>Food may contain adulterants that consumers cannot easily identify.</p></article>
+        <article class="info-card reveal"><span class="icon">~</span><h3>Lab Testing Isn&rsquo;t Convenient</h3><p>Traditional testing can require equipment, expertise and time.</p></article>
+        <article class="info-card reveal"><span class="icon">OK</span><h3>Consumers Need Simplicity</h3><p>People need an accessible way to check food quality.</p></article>
+        <article class="info-card reveal"><span class="icon">UP</span><h3>Food Businesses Need Quick Checks</h3><p>Small food businesses and suppliers can benefit from convenient testing.</p></article>
+      </div>
+    </section>
+
+    <section class="section split solution">
+      <div class="reveal">
+        <span class="eyebrow">The Solution</span>
+        <h2>Meet Safe Bite.</h2>
+        <p class="lead">A smart, portable food-adulteration detection pen designed to make food-quality checking quicker and more accessible.</p>
+        <div class="benefits">
+          <div><strong>Quick</strong><span>Possible indication within seconds.</span></div>
+          <div><strong>Portable</strong><span>Easy to carry and use anywhere.</span></div>
+          <div><strong>Simple</strong><span>Green/red LED result communication.</span></div>
+        </div>
+      </div>
+      <div class="comparison reveal">
+        <div>
+          <span>Traditional Approach</span>
+          <strong>Laboratory</strong>
+          <strong>Equipment</strong>
+          <strong>Time</strong>
+        </div>
+        <div>
+          <span>Safe Bite</span>
+          <strong>Portable</strong>
+          <strong>Quick</strong>
+          <strong>Simple</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-showcase" id="product">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Product Concept</span>
+        <h2>One Pen. A Smarter Way to Check Food.</h2>
+      </div>
+      <div class="showcase-wrap reveal">
+        <div class="callout c1">Portable design</div>
+        <div class="callout c2">Battery powered</div>
+        <div class="callout c3">LED indicator</div>
+        <div class="callout c4">Quick testing</div>
+        <div class="callout c5">Long-lasting build</div>
+        <div class="pen-mockup showcase">
+          <div class="pen-tip"></div>
+          <div class="pen-body"><span class="pen-brand">Safe Bite</span><span class="led-light"></span><span class="pen-line"></span></div>
+          <div class="pen-cap"></div>
+        </div>
+        <div class="product-card">
+          <h3>Safe Bite Detection Pen</h3>
+          <p>Smart | Portable | Affordable</p>
+          <a class="btn primary" href="#how">Explore the Concept</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="section-heading reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2>A Simple Four-Step Concept</h2>
+        <p>This is a startup product concept and does not claim scientifically validated detection capability.</p>
+      </div>
+      <div class="steps">
+        <article class="step reveal"><span>01</span><h3>Test</h3><p>Use the Safe Bite pen on the food sample.</p></article>
+        <article class="step reveal"><span>02</span><h3>Detect</h3><p>The device concept detects possible adulteration.</p></article>
+        <article class="step reveal"><span>03</span><h3>Indicate</h3><p><i class="dot safe"></i> Green - Safe<br><i class="dot unsafe"></i> Red - Unsafe</p></article>
+        <article class="step reveal"><span>04</span><h3>Record</h3><p>Results can be viewed, stored and managed through the website concept.</p></article>
+      </div>
+    </section>
+
+    <section class="section demo" id="demo">
+      <div class="demo-panel reveal">
+        <div>
+          <span class="eyebrow danger-note">Simulation - For Demonstration Only</span>
+          <h2>See Safe Bite in Action</h2>
+          <p>This interaction is only a front-end presentation demo. It is not an actual food-testing system.</p>
+        </div>
+        <div class="demo-controls">
+          <label for="sample">Food sample</label>
+          <select id="sample">
+            <option>Milk</option>
+            <option>Oil</option>
+            <option>Spices</option>
+            <option>Other</option>
+          </select>
+          <button class="btn primary" id="runDemo" type="button">Run Demo Test</button>
+        </div>
+        <div class="scanner-card" aria-live="polite">
+          <div class="mini-device"><span></span></div>
+          <div class="scan-line"></div>
+          <strong id="demoStatus">Ready to scan</strong>
+          <p id="demoResult">Choose a sample and run a simulated demo test.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Built Around Everyday Food Confidence.</h2>
+      </div>
+      <div class="card-grid three">
+        <article class="info-card reveal"><span class="icon">Q</span><h3>Quick Testing</h3><p>Designed around rapid food-quality checking.</p></article>
+        <article class="info-card reveal"><span class="icon">P</span><h3>Portable Design</h3><p>Easy to carry and use in different environments.</p></article>
+        <article class="info-card reveal"><span class="icon">L</span><h3>LED Indication</h3><p>Simple green/red result communication.</p></article>
+        <article class="info-card reveal"><span class="icon">B</span><h3>Battery Powered</h3><p>Designed as a portable electronic device.</p></article>
+        <article class="info-card reveal"><span class="icon">R</span><h3>Result Management</h3><p>Concept for viewing, storing and managing test results.</p></article>
+        <article class="info-card reveal"><span class="icon">IN</span><h3>Affordable</h3><p>Designed to be accessible compared with traditional laboratory testing.</p></article>
+      </div>
+    </section>
+
+    <section class="section customers" id="customers">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Customers</span>
+        <h2>Built for Everyone Who Cares About Food Safety.</h2>
+      </div>
+      <div class="card-grid four">
+        <article class="customer-card reveal"><span>H</span><h3>Households & Consumers</h3><p>People who want greater confidence in everyday food.</p></article>
+        <article class="customer-card reveal"><span>S</span><h3>Food Stores</h3><p>Retailers who want convenient quality checks.</p></article>
+        <article class="customer-card reveal"><span>C</span><h3>Restaurants & Cafes</h3><p>Businesses looking for quick food-quality checks.</p></article>
+        <article class="customer-card reveal"><span>D</span><h3>Food Suppliers & Distributors</h3><p>Businesses handling food across the supply chain.</p></article>
+      </div>
+    </section>
+
+    <section class="section market">
+      <div class="market-band reveal">
+        <div>
+          <span class="eyebrow">Market Opportunity</span>
+          <h2>A Growing Food-Safety Opportunity</h2>
+          <p>India&rsquo;s food-safety testing market is expected to grow steadily, creating opportunities for affordable and portable food-testing solutions.</p>
+        </div>
+        <div class="stat">
+          <span>India | 2025</span>
+          <strong>~US$718-906M</strong>
+          <p>Food-safety testing market in India</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section usp">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Why Safe Bite?</span>
+        <h2>Quick. Affordable. Portable.</h2>
+      </div>
+      <div class="pillars">
+        <article class="reveal"><h3>Quick</h3><p>Fast, convenient testing concept.</p></article>
+        <article class="reveal"><h3>Affordable</h3><p>Designed for everyday consumers and small businesses.</p></article>
+        <article class="reveal"><h3>Portable</h3><p>Take food-safety checking wherever you go.</p></article>
+      </div>
+      <div class="indicator-strip reveal">
+        <strong>Simple LED-based indication</strong>
+        <span><i class="pulse green"></i> Green = Safe</span>
+        <span><i class="pulse red"></i> Red = Unsafe</span>
+      </div>
+    </section>
+
+    <section class="section model" id="about">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Startup Model</span>
+        <h2>From Components to Customer.</h2>
+      </div>
+      <div class="process reveal">
+        <span>Suppliers</span><span>Assembly & Testing</span><span>Eco-Friendly Packaging</span><span>Website Sales</span><span>Delivery</span><span>Customer</span>
+      </div>
+      <div class="card-grid five">
+        <article class="mini-card reveal"><b>01 - Materials</b><p>Components and materials are purchased in bulk from reliable suppliers.</p></article>
+        <article class="mini-card reveal"><b>02 - Assembly</b><p>Products are assembled and tested.</p></article>
+        <article class="mini-card reveal"><b>03 - Packaging</b><p>Eco-friendly cardboard box with branding, manual and accessories.</p></article>
+        <article class="mini-card reveal"><b>04 - Sales</b><p>Customers discover or order through the startup website concept.</p></article>
+        <article class="mini-card reveal"><b>05 - Delivery</b><p>Products can be delivered through delivery partners.</p></article>
+      </div>
+    </section>
+
+    <section class="section marketing">
+      <div class="split">
+        <div class="reveal">
+          <span class="eyebrow">Marketing</span>
+          <h2>From Food Safety to a Food-Safety Movement.</h2>
+          <p class="lead">Safe Bite can grow awareness through social media, its own website, retail stores, online platforms and partnerships.</p>
+        </div>
+        <div class="social-card reveal">
+          <span>@safebite._.360</span>
+          <h3>SafeBite 360</h3>
+          <p>Smart food safety for everyday life.</p>
+          <div class="social-grid"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Collaboration</span>
+        <h2>Growing Through Collaboration</h2>
+        <p>Potential future partnerships with food businesses, laboratories, schools and food-safety organizations can help Safe Bite build credibility and expand reach.</p>
+      </div>
+      <div class="partner-row reveal"><span>Food Businesses</span><span>Laboratories</span><span>Schools</span><span>Food-Safety Organizations</span></div>
+    </section>
+
+    <section class="section roadmap">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Future Expansion</span>
+        <h2>A Focused Roadmap for Growth.</h2>
+      </div>
+      <div class="timeline">
+        <article class="reveal"><span>01</span><h3>Expand Products</h3><p>Introduce testing solutions for more types of food.</p></article>
+        <article class="reveal"><span>02</span><h3>New Markets</h3><p>Develop advanced smart testing devices and kits.</p></article>
+        <article class="reveal"><span>03</span><h3>Global Expansion</h3><p>Expand beyond India into markets where food testing is needed.</p></article>
+      </div>
+    </section>
+
+    <section class="final-cta section" id="contact">
+      <div class="reveal">
+        <span class="eyebrow">SafeBite 360</span>
+        <h2>Make Every Bite a Safer Bite.</h2>
+        <p>Technology that brings food-safety awareness closer to everyday life.</p>
+        <div class="hero-actions">
+          <a class="btn light" href="#product">Explore Safe Bite</a>
+          <a class="btn ghost" href="#about">Our Vision</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="brand" href="#home"><span class="brand-mark">SB</span><span>Safe Bite</span></a>
+      <p>Smart Food Safety for Everyday Life</p>
+      <p class="disclaimer">Prototype concept created for educational/startup-event presentation purposes.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#product">Product</a>
+      <a href="#how">How It Works</a>
+      <a href="#features">Features</a>
+      <a href="#customers">Customers</a>
+      <a href="#about">Vision</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-social">
+      <strong>@safebite._.360</strong>
+      <span>&copy; 2026 Safe Bite - Startup Prototype</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
