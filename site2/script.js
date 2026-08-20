@@ -29,21 +29,43 @@ document.addEventListener('DOMContentLoaded', () => {
   --------------------------------------------------------------------- */
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
+  const mobileOverlay = document.getElementById('mobileOverlay');
+  const mobileClose = document.getElementById('mobileClose');
+
+  function openMenu(){
+    mobileMenu.classList.add('open');
+    mobileOverlay.classList.add('open');
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('menu-open');
+  }
 
   function closeMenu(){
     hamburger.classList.remove('open');
     mobileMenu.classList.remove('open');
+    mobileOverlay.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
   }
 
   hamburger.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('open');
-    hamburger.classList.toggle('open', isOpen);
-    hamburger.setAttribute('aria-expanded', String(isOpen));
+    mobileMenu.classList.contains('open') ? closeMenu() : openMenu();
+  });
+
+  mobileClose.addEventListener('click', closeMenu);
+  mobileOverlay.addEventListener('click', closeMenu);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
   });
 
   mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeMenu);
+  });
+
+  // Close the menu automatically if the viewport is resized back to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 860 && mobileMenu.classList.contains('open')) closeMenu();
   });
 
   /* ---------------------------------------------------------------------
