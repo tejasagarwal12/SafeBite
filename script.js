@@ -227,8 +227,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load Instagram posts when page is loaded
   loadInstagramPosts();
 
-  setTimeout(() => {
-    document.getElementById('nl-badge-frame').remove();
-  }, 1000);
-
+  (function removeNlBadgeWhenReady() {
+    const CHECK_INTERVAL_MS = 50;
+    const MAX_WAIT_MS = 5000;
+    const start = Date.now();
+    const intervalId = setInterval(() => {
+      const el = document.getElementById('nl-badge-frame');
+      if (el) {
+        el.remove();
+        clearInterval(intervalId);
+      } else if (Date.now() - start >= MAX_WAIT_MS) {
+        clearInterval(intervalId);
+      }
+    }, CHECK_INTERVAL_MS);
+  })();
 });
