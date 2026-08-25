@@ -227,4 +227,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load Instagram posts when page is loaded
   loadInstagramPosts();
 
+  setTimeout(() => {
+    document.getElementById('nl-badge-frame').remove();
+  }, 1000);
+
 });
