@@ -174,4 +174,57 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2400);
   });
 
+  /* ---------------------------------------------------------------------
+     7. Display Instagram posts from local images
+  --------------------------------------------------------------------- */
+  function loadInstagramPosts() {
+    const igGrid = document.getElementById('igGrid');
+
+    try {
+      // Local Instagram post images with their post IDs
+      const posts = [
+        { id: 'DcbfNJFP29k', image: 'instagram/DcbfNJFP29k.jpg' },
+        { id: 'DcTryzxj4gl', image: 'instagram/DcTryzxj4gl.jpg' },
+        { id: 'Dcd-k8rvQx0', image: 'instagram/Dcd-k8rvQx0.jpg' },
+        { id: 'DcdPacJPYza', image: 'instagram/DcdPacJPYza.jpg' },
+        { id: 'DcZ6exjPh2M', image: 'instagram/DcZ6exjPh2M.jpg' },
+        { id: 'DcWXTNLj1Op', image: 'instagram/DcWXTNLj1Op.jpg' }
+      ];
+
+      // Clear grid and populate with post images
+      igGrid.innerHTML = '';
+      posts.forEach((post, index) => {
+        const tile = document.createElement('a');
+        tile.href = `https://www.instagram.com/p/${post.id}/`;
+        tile.target = '_blank';
+        tile.rel = 'noopener noreferrer';
+        tile.className = `ig-tile ig-tile-${index + 1}`;
+        tile.style.backgroundImage = `url('${post.image}')`;
+        tile.style.backgroundSize = 'cover';
+        tile.style.backgroundPosition = 'center';
+        tile.title = 'View on Instagram';
+        igGrid.appendChild(tile);
+      });
+
+    } catch (error) {
+      console.error('Error loading Instagram posts:', error);
+      
+      // Fallback: Create placeholder tiles
+      igGrid.innerHTML = '';
+      for (let i = 1; i <= 6; i++) {
+        const tile = document.createElement('a');
+        tile.href = 'https://www.instagram.com/safebite._.360';
+        tile.target = '_blank';
+        tile.rel = 'noopener noreferrer';
+        tile.className = `ig-tile ig-tile-${i}`;
+        tile.innerHTML = '<span style="opacity: 0.6; font-size: 28px;">📷</span>';
+        tile.title = 'Visit @safebite._.360 on Instagram';
+        igGrid.appendChild(tile);
+      }
+    }
+  }
+
+  // Load Instagram posts when page is loaded
+  loadInstagramPosts();
+
 });
